@@ -55,5 +55,5 @@ jobs:
           context: .
           file: api/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/api-modele-ml:${{ github.sha }}
+          tags: ghcr.io/eyasarii/api-modele-ml:${{ github.sha }}
       # Déploiement canary : voir la partie DevOps (Kubernetes, kubectl set image)
