@@ -38,21 +38,17 @@ stages:
       params.yaml:
         entrainement:
           n_estimators:
-          - 50
-          - 100
-          - 200
+          - 1
           max_depth:
-          - 3
-          - 6
-          - 10
+          - 1
           test_size: 0.2
           seed: 42
     outs:
     - path: metriques.json
       hash: md5
-      md5: 31cf1eebdf13f25bc822699b79448bf9
-      size: 78
+      md5: 541d55741bb15019610d2735110e41ce
+      size: 108
     - path: modeles/modele_final.pkl
       hash: md5
-      md5: 81e337e23c527bf5e47491e3b0a78b2d
-      size: 73409
+      md5: 476dfa1e6dbabec936489ae30ef812f3
+      size: 2641
