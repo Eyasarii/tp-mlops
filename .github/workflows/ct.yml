@@ -4,7 +4,7 @@ name: CI-CD-CT modele vins
 on:
   push:
     branches: [main]
-    paths: ["src/**", "api/**", "params.yaml", "dvc.yaml"]   # CI : le code ou les paramètres changent
+    paths: ["src/**", "api/**", "params.yaml", "dvc.yaml", "requirements.txt"]   # CI : le code ou les paramètres changent
   schedule:
     - cron: "0 3 * * 1"          # CT planifié : chaque lundi à 3 h (UTC)
   workflow_dispatch:             # CT manuel (bouton Run workflow)
