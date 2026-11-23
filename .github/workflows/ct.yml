@@ -26,7 +26,7 @@ jobs:
       - name: Porte de qualité
         run: python src/evaluer.py      # échoue si le modèle n'est pas assez bon
       - name: Tests de l'API avec le nouveau modèle
-        run: pytest tests/ -v
+        run: python -m pytest tests/ -v
       - uses: actions/upload-artifact@v4
         with:
           name: modele
