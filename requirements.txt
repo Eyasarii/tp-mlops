@@ -1,0 +1,14 @@
+# Versions figées : l'API servira le modèle avec EXACTEMENT les mêmes bibliothèques
+scikit-learn==1.5.2   # modèle RandomForest
+pandas==2.2.3         # manipulation des données
+numpy==1.26.4
+scipy==1.14.1         # test de Kolmogorov-Smirnov (partie 4)
+mlflow==2.17.2        # tracking et registre (partie 2)
+dvc==3.56.0           # versioning des données (partie 1)
+fastapi==0.115.6      # API de prédiction (partie 3)
+uvicorn[standard]==0.32.1
+httpx==0.28.1         # requis par le TestClient de FastAPI
+joblib==1.4.2         # sérialisation du modèle
+pytest==8.3.4
+pyyaml==6.0.2         # lecture de params.yaml
+sqlalchemy==2.0.36
